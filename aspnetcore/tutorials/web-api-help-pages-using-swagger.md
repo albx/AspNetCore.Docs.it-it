@@ -1,7 +1,7 @@
 ---
-title: Documentazione dell'API Web di ASP.NET Core con spavalderia/OpenAPI
+title: Documentazione dell'API Web di ASP.NET Core con Swagger/OpenAPI
 author: RicoSuter
-description: Questa esercitazione offre una procedura dettagliata per aggiungere spavalderia per generare la documentazione e le pagine della Guida per un'app per le API Web.
+description: Questa esercitazione offre una procedura dettagliata per aggiungere Swagger per generare la documentazione e le pagine della Guida per un'app per le API Web.
 ms.author: scaddie
 ms.custom: mvc
 ms.date: 10/29/2020
@@ -25,11 +25,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/04/2021
 ms.locfileid: "93062454"
 ---
-# <a name="aspnet-core-web-api-documentation-with-swagger--openapi"></a>Documentazione dell'API Web di ASP.NET Core con spavalderia/OpenAPI
+# <a name="aspnet-core-web-api-documentation-with-swagger--openapi"></a>Documentazione dell'API Web di ASP.NET Core con Swagger/OpenAPI
 
 Di [Christoph Nienaber](https://twitter.com/zuckerthoben) e [Rico Suter](https://blog.rsuter.com/)
 
-Spavalderia (OpenAPI) è una specifica indipendente dal linguaggio per la descrizione delle API REST. Consente a entrambi i computer e gli utenti di comprendere le funzionalità di un'API REST senza accesso diretto al codice sorgente. Gli obiettivi principali sono i seguenti:
+Swagger (OpenAPI) è una specifica indipendente dal linguaggio per la descrizione delle API REST. Consente a entrambi i computer e gli utenti di comprendere le funzionalità di un'API REST senza accesso diretto al codice sorgente. Gli obiettivi principali sono i seguenti:
 
 * Ridurre al minimo la quantità di lavoro necessaria per connettere i servizi separati.
 * Ridurre la quantità di tempo necessaria per documentare accuratamente un servizio.
@@ -39,14 +39,14 @@ Le due implementazioni principali di OpenAPI per .NET sono [Swashbuckle](https:/
 * [Introduzione con Swashbuckle](xref:tutorials/get-started-with-swashbuckle)
 * [Introduzione con NSwag](xref:tutorials/get-started-with-nswag)
 
-## <a name="openapi-vs-swagger"></a>Confronto tra OpenApi e spavalderia
+## <a name="openapi-vs-swagger"></a>Confronto tra OpenApi e Swagger
 
-Il progetto spavalderia è stato donato all'iniziativa OpenAPI nel 2015 ed è stato definito come OpenAPI. Entrambi i nomi vengono usati in modo interscambiabile. Tuttavia, "OpenAPI" si riferisce alla specifica. "Spavalderia" si riferisce alla famiglia di prodotti open source e commerciali di SmartBear che funzionano con la specifica OpenAPI. I successivi prodotti open source, ad esempio [OpenAPIGenerator](https://github.com/OpenAPITools/openapi-generator), rientrano anche nel nome della famiglia di spavalderia, nonostante non venga rilasciato da SmartBear.
+Il progetto Swagger è stato donato all'iniziativa OpenAPI nel 2015 ed è stato definito come OpenAPI. Entrambi i nomi vengono usati in modo interscambiabile. Tuttavia, "OpenAPI" si riferisce alla specifica. "Swagger" si riferisce alla famiglia di prodotti open source e commerciali di SmartBear che funzionano con la specifica OpenAPI. I successivi prodotti open source, ad esempio [OpenAPIGenerator](https://github.com/OpenAPITools/openapi-generator), rientrano anche nel nome della famiglia di Swagger, nonostante non venga rilasciato da SmartBear.
 
 In breve:
 
 * OpenAPI è una specifica.
-* Spavalderia è uno strumento che usa la specifica OpenAPI. Ad esempio, OpenAPIGenerator e Swagger.
+* Swagger è uno strumento che usa la specifica OpenAPI. Ad esempio, OpenAPIGenerator e Swagger.
 
 ## <a name="openapi-specification-openapijson"></a>Specifica OpenAPI (openapi.js)
 
@@ -140,7 +140,7 @@ La specifica OpenAPI è un documento che descrive le funzionalità dell'API. Il 
 
 ## <a name="swagger-ui"></a>Interfaccia utente di Swagger
 
-L' [interfaccia utente di spavalderia](https://swagger.io/swagger-ui/) offre un'interfaccia utente basata sul Web che fornisce informazioni sul servizio, usando la specifica openapi generata. Sia Swashbuckle sia NSwag includono una versione incorporata di Swagger UI che può essere ospitata nell'applicazione ASP.NET Core dell'utente con una chiamata di registrazione middleware. L'interfaccia utente Web è simile alla seguente:
+L' [interfaccia utente di Swagger](https://swagger.io/swagger-ui/) offre un'interfaccia utente basata sul Web che fornisce informazioni sul servizio, usando la specifica openapi generata. Sia Swashbuckle sia NSwag includono una versione incorporata di Swagger UI che può essere ospitata nell'applicazione ASP.NET Core dell'utente con una chiamata di registrazione middleware. L'interfaccia utente Web è simile alla seguente:
 
 ![Interfaccia utente di Swagger](web-api-help-pages-using-swagger/_static/swagger-ui.png)
 
